@@ -27,7 +27,7 @@ public class SearchFunctionalitySteps extends Parent {
 
 
     @And("Incorrect Product Code {string}")
-    public void ıncorrectProductCode(String code) {
+    public void incorrectProductCode(String code) {
         mySendKeys(us7.searchBoxPlc, code);
         if (code.length() < 3) {
             myClick(us7.searchBoxCl);
